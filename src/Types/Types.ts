@@ -4,7 +4,7 @@ export type TchildrenProps = {
     children: ReactNode;
 }
 
-export interface Iticket { // типы данных с серверв
+export interface Iticket { 
     id: number;
     from: string;
     to: string;
@@ -18,11 +18,11 @@ export interface Iticket { // типы данных с серверв
     transfers: string;
 }
 
-export type Tcompany = { // тип пропса в компоненте GlobalSvg
+export type Tcompany = {
     company: string;
 }
 
-export interface IpropseTickets { // типы пропсов
+export interface IpropseTickets {
     id: number;
     from: string;
     to: string;

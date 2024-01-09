@@ -5,9 +5,9 @@ import GlobalSvg from '../../../GlobalLogoCompany/GlobalLogo';
 
 function TicketsInfo({company, from, to, currency, price, startTime, endTime, duration, transfers }: IpropseTickets) {
 
-    let format = new Date(duration)
+    const format = new Date(duration)
 
-    let durationData = format.toString().slice(16, 21).split(":")[0] + " " + "ч" + " " + format.toString().slice(16, 21).split(":")[1] + " " + "мин"
+    const durationData = format.toString().slice(16, 21).split(":")[0] + " " + "ч" + " " + format.toString().slice(16, 21).split(":")[1] + " " + "мин"
     
     return (
         <div className={style.ticket}>
